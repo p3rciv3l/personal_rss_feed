@@ -17,9 +17,11 @@
     "default_title": "Open News Extension"
   },
   "icons": {
-    "16": "assets/icon16.png",
-    "48": "assets/icon48.png",
-    "128": "assets/icon128.png"
+    "bloomberg": "assets/bloomberg_logo.png",
+    "financial_times": "financial_times_logo.png",
+    "the_information": "the_information_logo",
+    "the_wall_street_journal": "the_wall_street_journal_logo.png"
+
   },
   "host_permissions": [
     "*://*.bloomberg.com/*",

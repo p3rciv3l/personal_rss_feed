@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Google Chrome RSS Feed",
+  "version": "1.0",
+  "description": "Pulls daily articles from The Information, BBG, FT, and WSJ and displays them in a grid layout.",
+  "permissions": [
+    "activeTab",
+    "alarms",
+    "storage",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Open News Extension"
+  },
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "host_permissions": [
+    "*://*.bloomberg.com/*",
+    "*://*.ft.com/*",
+    "*://*.wsj.com/*",
+    "*://*.theinformation.com/*"
+  ]
+}
